@@ -1,0 +1,101 @@
+<!doctype html>
+
+<!-- nate bennet  -->
+<html class="no-js" lang="en">
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+   <!--  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.1.0/dist/aframe-physics-system.min.js"></script> -->
+  
+  <meta charset="utf-8">
+  <title>VR Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+<!--   <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script> -->
+<!--   <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script> -->
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.0/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+<!-- <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.js"></script> -->
+    <a-scene>
+
+<a-entity
+  camera 
+  position="0 5 0"
+  kinematic-body
+  look-controls
+  universal-controls>
+</a-entity>
+<!-- 
+<a-obj-model class="fire" src="fire.obj" mtl="fire.mtl" scale=".02 .02 .02" position=" 22.6 -.302 -21.7"></a-obj-model>
+<a-obj-model class="dona" src="dona.obj" mtl="dona.mtl" scale=".5 .5 .5" position="3 -.002 0"></a-obj-model>
+<a-obj-model class="wrench" src="wrench.obj" mtl="wrench.mtl" scale=".5 .5 .5" position="0 0.757 0"></a-obj-model>
+<a-obj-model class="man" src="man.obj" mtl="man.mtl" scale="2 2 2" position= "5.598 0 14.298"></a-obj-model>
+<a-obj-model class="settie-sofa" src="chair-tub-2.obj" mtl="chair-tub-2.mtl" scale="2 2 2" position= "-2 0.01 -9"></a-obj-model>
+<a-obj-model class="knife" src="knife.obj" mtl="knife.mtl" scale=".05 .05 .05" position= "-2.774 -.6 -17.53" rotation="0 0 90"></a-obj-model> -->
+
+
+      <a-entity
+               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position=" 27 2.487 0.95" rotation="0 90 0" scale="55 5 1"></a-entity>
+      <a-entity
+               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="0 2.487 28.1" rotation="0 90 0"  scale="1 5 55"></a-entity>
+      <a-entity
+               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="0 2.487 -26.15" rotation="0 90 0"  scale="1 5 55"></a-entity>
+      <a-entity
+               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="-27 2.487 0.882" rotation="0 90 0" scale="55 5 1"></a-entity>
+     <!--  <a-box constraint="target: #other-box;" static-body /> -->
+<!-- 
+      <a-box static-body material="src:img/custwall.jpg;" position="11.568 2.487 -20.83" rotation="0 90 0" scale="11 5 1"></a-box>
+      <a-box static-body material="src:img/custwall.jpg;" position="11.427 2.487 22.88" rotation="0 90 0" scale="11 5 1"></a-box>
+      <a-box static-body material="src:img/custwall.jpg; repeat:2 1;" position="11.427 2.487 2.920" rotation="0 90 0" scale="22 5 1"></a-box>
+      <a-box static-body material="src:img/custwall.jpg; repeat:3 1;" position="10.458 2.487 -11.73" rotation="0 90 0" scale="1 5 33"></a-box>
+      <a-box material="src:img/custwall.jpg;" position="-21.672 2.487 -12.4" rotation="0 90 0" scale="1 5 11"></a-box>
+      <a-box material="src:img/custwall.jpg; repeat:4.5 1;" position="-10.77 2.487 -1.39" rotation="0 90 0" scale="49.5 5 1"></a-box>
+      <a-box material="src:img/custwall.jpg;" position="-16.33 2.487 0" rotation="0 90 0"  scale="1 5 11"></a-box>
+      <a-box material="src:img/custwall.jpg;" position="-21.672 2.487 13.5" rotation="0 90 0" scale="1 5 11"></a-box>
+      <a-box material="src:img/custwall.jpg; repeat:2 1;" position="0.12 2.487 8" rotation="0 90 0" scale="1 5 22"></a-box>
+      <a-box material="src:img/custwall.jpg;" position="21.342 2.487 8" rotation="0 90 0" scale="1 5 11"></a-box>
+
+      <a-sphere position="-20.8 .45 -19.5" radius="1.25" src="img/fur.jpg"></a-sphere>
+      <a-cylinder position="0 0 0" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>  -->
+
+<!-- Using the asset management system. -->
+  <!-- <a-obj-model src="#crate-obj" scale=".015 .015 .015"></a-obj-model> -->
+      <a-entity geometry="primitive: plane; height:300; width:300; rotation: 90 0 0" static-body material="src:img/floor.jpg; repeat:20 20" position="0 0 -4" rotation="-90 0 0" width="300%" height="300%"></a-entity>
+  <!--     <a-plane color="black" position=".253 5 -0.034" rotation="90 0 0" scale="56 56 56"></a-plane> -->
+      <a-sky src="pic3.jpg"></a-sky>
+    </a-scene>
+  <!-- javascript -->
+<!--   <script src="js/aframe-extras.js"></script>
+  <script src="js/physics.js"></script> -->
+<!--   <script src="js/cannon.js"></script>
+    <script src="js/budle.js"></script>
+      <script src="js/my-app.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.js"></script>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>

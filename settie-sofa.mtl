@@ -1,0 +1,21 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl Legs
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.098039 0.043137 0.023529
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Settie
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd 0013-chrome-satin-metal-texture-seamless-hr.jpg
