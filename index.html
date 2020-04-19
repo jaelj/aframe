@@ -1,6 +1,6 @@
 <!doctype html>
 
-<!-- nate bennet  -->
+<!-- nate bennet's project for reference  -->
 <html class="no-js" lang="en">
 
 <head>
@@ -32,65 +32,90 @@
 
 <a-entity
   camera 
-  position="0 5 0"
+  position="-0.344 1 45"
   kinematic-body
   look-controls
   universal-controls>
 </a-entity>
-<!-- 
-<a-obj-model class="fire" src="fire.obj" mtl="fire.mtl" scale=".02 .02 .02" position=" 22.6 -.302 -21.7"></a-obj-model>
-<a-obj-model class="dona" src="dona.obj" mtl="dona.mtl" scale=".5 .5 .5" position="3 -.002 0"></a-obj-model>
-<a-obj-model class="wrench" src="wrench.obj" mtl="wrench.mtl" scale=".5 .5 .5" position="0 0.757 0"></a-obj-model>
-<a-obj-model class="man" src="man.obj" mtl="man.mtl" scale="2 2 2" position= "5.598 0 14.298"></a-obj-model>
-<a-obj-model class="settie-sofa" src="chair-tub-2.obj" mtl="chair-tub-2.mtl" scale="2 2 2" position= "-2 0.01 -9"></a-obj-model>
-<a-obj-model class="knife" src="knife.obj" mtl="knife.mtl" scale=".05 .05 .05" position= "-2.774 -.6 -17.53" rotation="0 0 90"></a-obj-model> -->
+
+<!-- Entrance Door -->
+<a-entity obj-model="obj: obj/white-door.obj; mtl: obj/white-door.mtl" scale="0.05 0.05 0.05" position= "0.227 0 29.778" rotation="0 180 0"></a-entity>
+
+<a-entity obj-model="obj: obj/ma-table.obj; mtl: obj/ma-table.mtl" scale="2 2 2" position= "19.545 0 -1.255" rotation="0 90 0"></a-entity>
+
+<a-obj-model class="fire" src="obj/fire.obj" mtl="obj/fire.mtl" scale=".02 .02 .02" position=" 22.6 -.302 -21.7"></a-obj-model>
+<a-obj-model class="wrench" src="obj/wrench.obj" mtl="obj/wrench.mtl" scale=".5 .5 .5" position="-4.817 0.757 2.618"></a-obj-model>
+<a-obj-model class="man" src="obj/man.obj" mtl="obj/man.mtl" scale="2 2 2" position= "7 0 2.543" rotation="0 205 0"></a-obj-model>
+<a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-8.609 -0.1 2.474" rotation=" 0 90 0"></a-entity>
+<a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-1.112  -0.1 2.474" rotation="0 270 0"></a-entity>
+<a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-4.468 -0.1 5.984" rotation="0 180 0"></a-entity>
+<a-obj-model class="knife" src="obj/knife.obj" mtl="obj/knife.mtl" scale=".05 .05 .05" position= "-2.774 -1 -17.53" rotation="0 0 90"></a-obj-model>
+
+<a-light type="point" color="white" position="-0.344 1.071 33.27"></a-light>
+<a-light type="point" color="white" position="0 1.071 0" intensity="0.09"></a-light>
+<a-light type="point" color="white" position="-25 1.071 -0.588" intensity="0.5"></a-light>
+<a-light type="point" color="white" position="25 1.071 -0.588" intensity="0.5"></a-light>
+<a-light type="point" color="white" position="0 1.071 -25" intensity="0.5"></a-light>
+
+      <!-- Outside of Mansion -->
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/brick.jpg; repeat:5 1;" position="-15.16 2.487 28.902" rotation="0 90 0"  scale="1 5 25.5"></a-entity>
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/brick.jpg; repeat:11 1;" position=" 27.556 2.487 0.884"  rotation="0 90 0" scale="57 5 1"></a-entity>
+      <a-entity
+                geometry="primitive: box" material="src:img/brick.jpg; repeat:1 1;" position="-0.166 2.487 28.902" rotation="0 90 0"  scale="1 5 5"></a-entity>
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/brick.jpg; repeat:5 1;" position="14.522 2.487 28.902" rotation="0 90 0"  scale="1 5 27"></a-entity>
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/brick.jpg; repeat:11 1;" position="0.044 2.487 -27.2" rotation="0 90 0"  scale="1 5 56"></a-entity>
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/brick.jpg; repeat:11 1;" position="-27.5 2.487 0.836" rotation="0 90 0" scale="57 5 1"></a-entity>
 
 
+
       <a-entity
-               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position=" 27 2.487 0.95" rotation="0 90 0" scale="55 5 1"></a-entity>
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:2 1;" position=" 27 2.487 0.95"  rotation="0 90 0" scale="55 5 1"></a-entity>
+      
       <a-entity
-               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="0 2.487 28.1" rotation="0 90 0"  scale="1 5 55"></a-entity>
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="-14.37 2.487 27.942" rotation="0 90 0"  scale="1 5 25"></a-entity>
+      
       <a-entity
-               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="0 2.487 -26.15" rotation="0 90 0"  scale="1 5 55"></a-entity>
+                geometry="primitive: box" material="src:img/custwall.jpg; repeat:1 1;" position="0 2.487 27.942" rotation="0 90 0"  scale="1 5 5"></a-entity>
       <a-entity
-               static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="-27 2.487 0.882" rotation="0 90 0" scale="55 5 1"></a-entity>
-     <!--  <a-box constraint="target: #other-box;" static-body /> -->
-<!-- 
-      <a-box static-body material="src:img/custwall.jpg;" position="11.568 2.487 -20.83" rotation="0 90 0" scale="11 5 1"></a-box>
-      <a-box static-body material="src:img/custwall.jpg;" position="11.427 2.487 22.88" rotation="0 90 0" scale="11 5 1"></a-box>
-      <a-box static-body material="src:img/custwall.jpg; repeat:2 1;" position="11.427 2.487 2.920" rotation="0 90 0" scale="22 5 1"></a-box>
-      <a-box static-body material="src:img/custwall.jpg; repeat:3 1;" position="10.458 2.487 -11.73" rotation="0 90 0" scale="1 5 33"></a-box>
-      <a-box material="src:img/custwall.jpg;" position="-21.672 2.487 -12.4" rotation="0 90 0" scale="1 5 11"></a-box>
-      <a-box material="src:img/custwall.jpg; repeat:4.5 1;" position="-10.77 2.487 -1.39" rotation="0 90 0" scale="49.5 5 1"></a-box>
-      <a-box material="src:img/custwall.jpg;" position="-16.33 2.487 0" rotation="0 90 0"  scale="1 5 11"></a-box>
-      <a-box material="src:img/custwall.jpg;" position="-21.672 2.487 13.5" rotation="0 90 0" scale="1 5 11"></a-box>
-      <a-box material="src:img/custwall.jpg; repeat:2 1;" position="0.12 2.487 8" rotation="0 90 0" scale="1 5 22"></a-box>
-      <a-box material="src:img/custwall.jpg;" position="21.342 2.487 8" rotation="0 90 0" scale="1 5 11"></a-box>
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="14.243 2.487 27.942" rotation="0 90 0"  scale="1 5 25"></a-entity>
+
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="0 2.487 -26.15" rotation="0 90 0"  scale="1 5 55"></a-entity>
+      <a-entity
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:5 1;" position="-27 2.487 0.882" rotation="0 90 0" scale="55 5 1"></a-entity>
+
+
+      <a-entity 
+                static-body geometry="primitive: box" material="src:img/custwall.jpg;" position="11.568 2.487 -20.83" rotation="0 90 0" scale="11 5 1"></a-entity>
+      <a-entity 
+                static-body geometry="primitive: box" material="src:img/custwall.jpg;" position="11.427 2.487 22.88" rotation="0 90 0" scale="11 5 1"></a-entity>
+      <a-entity 
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:2 1;" position="11.427 2.487 2.920" rotation="0 90 0" scale="22 5 1"></a-entity>
+      <a-entity 
+                static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:3 1;" position="10.458 2.487 -11.73" rotation="0 90 0" scale="1 5 33"></a-entity>
+      
+      <a-entity static-body geometry="primitive: box" material="src:img/custwall.jpg;" position="-21.672 2.487 -12.4" rotation="0 90 0" scale="1 5 11"></a-entity>
+      <a-entity static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:4.5 1;" position="-10.77 2.487 3.006" rotation="0 90 0" scale="49.5 5 1"></a-entity>
+      <a-entity static-body geometry="primitive: box" material="src:img/custwall.jpg;" position="-16.33 2.487 0" rotation="0 90 0"  scale="1 5 11"></a-entity>
+      <a-entity static-body geometry="primitive: box" material="src:img/custwall.jpg;" position="-21.672 2.487 13.5" rotation="0 90 0" scale="1 5 11"></a-entity>
+      <a-entity static-body geometry="primitive: box" material="src:img/custwall.jpg; repeat:2 1;" position="0.12 2.487 8" rotation="0 90 0" scale="1 5 22"></a-entity>
+      <a-entity static-body geometry="primitive: box" material="src:img/custwall.jpg;" position="21.342 2.487 8" rotation="0 90 0" scale="1 5 11"></a-entity>
 
       <a-sphere position="-20.8 .45 -19.5" radius="1.25" src="img/fur.jpg"></a-sphere>
-      <a-cylinder position="0 0 0" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>  -->
+      <a-cylinder position="-4.817 0 2.618" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> 
 
-<!-- Using the asset management system. -->
-  <!-- <a-obj-model src="#crate-obj" scale=".015 .015 .015"></a-obj-model> -->
-      <a-entity geometry="primitive: plane; height:300; width:300; rotation: 90 0 0" static-body material="src:img/floor.jpg; repeat:20 20" position="0 0 -4" rotation="-90 0 0" width="300%" height="300%"></a-entity>
-  <!--     <a-plane color="black" position=".253 5 -0.034" rotation="90 0 0" scale="56 56 56"></a-plane> -->
-      <a-sky src="pic3.jpg"></a-sky>
+
+      <a-entity geometry="primitive: plane; height:300; width:300; rotation: 90 0 0" static-body=" position: 0 3 0" material="src:img/floor.jpg; repeat:20 20" position="0 0 -4" rotation="-90 0 0" width="300%" height="300%"></a-entity>
+      <a-entity geometry="primitive: plane; height:55; width:55;" material="src:img/top2.png; repeat:20 20" position="0 5 1.132" rotation="90 0 0"></a-entity>
+      <a-sky src="img/pic3.jpg"></a-sky>
     </a-scene>
-  <!-- javascript -->
-<!--   <script src="js/aframe-extras.js"></script>
-  <script src="js/physics.js"></script> -->
-<!--   <script src="js/cannon.js"></script>
-    <script src="js/budle.js"></script>
-      <script src="js/my-app.js"></script>
-  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
-  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.js"></script>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Google Analytics: -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
