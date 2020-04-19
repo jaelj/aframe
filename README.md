@@ -1,6 +1,4 @@
-# Sous Vide
-## pre-made vacuum sealed code ready to boil  
+# Clue Themed VR
+## A fantasy Clue experience 
 
-* web project starter
-	* smashup of html5 boilerplate
-	* with node, node-sass, gulp-sass, and gulp
+* In this VR world you will enter into a maze-like house where each room has a different clue-like theme to it and the last room is where you will find the murder victim, murder weapon, and murderer
