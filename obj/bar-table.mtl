@@ -1,0 +1,18 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 27.03.2018 13:31:56
+
+newmtl cgaxis_models_99_31_01
+	Ns 58.333332
+	Ni 2.000000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.000000 0.000000 0.000000
+	Kd 0.027451 0.023529 0.023529
+	Ks 0.214745 0.214745 0.214745
+	Ke 0.000000 0.000000 0.000000
+	map_Ks maps\cgaxis_models_99_31_01_reflect.jpg
+	map_bump maps\cgaxis_models_99_31_01_bump.png
+	bump maps\cgaxis_models_99_31_01_bump.png
+	map_refl maps\cgaxis_models_99_31_01_reflect.jpg
