@@ -42,40 +42,52 @@
 
 
 
-<!-- Entrance Door -->
+<!-- Outside -->
 <a-entity obj-model="obj: obj/white-door.obj; mtl: obj/white-door.mtl" scale="0.05 0.05 0.05" position= "0.227 0 29.778" rotation="0 180 0"></a-entity>
 <a-entity obj-model="obj: obj/white-door.obj; mtl: obj/white-door.mtl" scale="0.05 0.05 0.05" position= "0.227 0 27.824" rotation="0 180 0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "3.487 0 30.467" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="3.487 0 30.467" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "-2.698 0 30.467" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-2.698 0 30.467" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "3.487 0 34.625" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="3.487 0 34.625" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "-2.698 0 34.625" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-2.698 0 34.625" scale="2 5 2" material="opacity:0"></a-entity>
+
+
 
 <!-- Entryway -->
 <a-entity text-geometry="value: Welcome to" position="-4.958 2.152 17.647" scale="1.5 1.5 1.5" material="color: yellow"></a-entity>
 <a-entity text-geometry="value: CLUE; font: #optimerBoldFont" position="-5.395 0 17.647" material="color: blue" scale="4 4 4"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "3.487 0 26.495" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="3.487 0 26.495" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "-2.698 0 26.495" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-2.698 0 26.495" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity gltf-model="obj/carla.glb" scale="1.9 1.9 1.9" position= "5.582 0 12.713" rotation="0 0 0"></a-entity>
 <a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="5.582 0 12.713" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "-8.237 0 10.826" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-8.237 0 10.826" scale="2 5 2" material="opacity:0"></a-entity>
 
 <!-- Ballroom -->
 <a-entity gltf-model="obj/guy.glb" scale="1.9 1.9 1.9" position= "25.385 0 17.416" rotation="0 270 0"></a-entity>
-<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="25.385 0 17.416" scale="2 5 2" material="opacity:0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="25.385 0 17.416" scale="3 5 3" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "13.729 0 25.205" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="13.729 0 25.205" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "25.3 0 9.849" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="25.3 0 9.849" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity gltf-model="obj/piano.glb" scale=".075 .075 .075" position= "22.824 0 24.721" rotation="0 315 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 45 0" position="22.824 0 24.721" scale="5.5 5 7" material="opacity:0;"></a-entity>
 
 <!-- Living room -->
 <a-entity obj-model="obj: obj/sofa-1.obj; mtl: obj/sofa-1.mtl" scale="2.5 2.5 2.5" position= "24.922 0 -1.496" rotation="0 270 0"></a-entity>
@@ -85,53 +97,67 @@
 <a-entity obj-model="obj: obj/tv.obj; mtl: obj/tv.mtl" scale=".75 .75 .75" position= "13.193 0.833 -1.548" rotation="0 90 0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "25.3 0 -6.133" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="25.3 0 -6.133" scale="2 5 2" material="opacity:0"></a-entity>
 
 <!-- Bar Room -->
 
 <a-entity gltf-model="obj/bar-counter.glb" scale=".03 .02 .01" position= "8.438 0 .194" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="9 0 -1.073" scale="8 4 1" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/bar-table.obj; mtl: obj/bar-table.mtl" scale=".07 .07 .07" position= "4.731 0 -2.092" rotation=" 0 90 0"></a-entity>
-
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="4.731 0 -2.092" scale="4.3 4 2.3" material="opacity:0;"></a-entity>
 <a-entity gltf-model="obj/stool.glb" scale="2 2.5 2" position= "4.705 0 -3.702" rotation="0 0 0"></a-entity>
-
 <a-entity gltf-model="obj/stool.glb" scale="2 2.5 2" position= "4.705 0 -0.505" rotation="0 180 0"></a-entity>
 
 <a-obj-model class="man" src="obj/man.obj" mtl="obj/man.mtl" scale="2 2 2" position= "7 0 2.543" rotation="0 205 0"></a-obj-model>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="7 0 2.543" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-8.609 -0.1 -1.957" rotation=" 0 90 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="-8.609 -0.1 -1.957" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-1.112  -0.1 2.474" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="-1.112  -0.1 2.474" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-4.864 -0.1 5.984" rotation="0 180 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="-4.864 -0.1 5.984" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-8.609 -0.1 2.474" rotation=" 0 90 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="-8.609 -0.1 2.474" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-1.112  -0.1 -1.957" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="-1.112  -0.1 -1.957" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "-4.864 -0.1 -4.853" rotation="0 0 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="-4.864 -0.1 -4.853" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
-<a-cylinder position="-4.817 0 2.618" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-<a-cylinder position="-4.817 0 -2.04" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-
+<a-entity static-body geometry="primitive: cylinder;" position="-4.817 0 2.618" radius="0.5" scale="1 1.45 1" material="color:#FFC65D;"></a-entity>
 <a-obj-model class="wrench" src="obj/wrench.obj" mtl="obj/wrench.mtl" scale=".5 .5 .5" position="-4.817 0.757 2.618"></a-obj-model>
 
+<a-entity static-body geometry="primitive: cylinder;" position="-4.817 0 -2.04" radius="0.5" scale="1 1.45 1"  material="color:#FFC65D;"></a-entity>
+
+
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "8.973 0 5.649" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="8.973 0 5.649" scale="2 5 2" material="opacity:0"></a-entity>
 
 <!-- Jacuzzi Room -->
 <a-entity gltf-model="obj/jacuzzi.glb" scale="20 20 20" position= "18.910 -1.552 -19.39" rotation="0 0 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="18.910 1 -19.39" scale="4.15 2 4.15" material="opacity:0;"></a-entity>
 
 <!-- Study -->
-<!-- <a-obj-model class="knife" src="obj/knife.obj" mtl="obj/knife.mtl" scale=".05 .05 .05" position= "-2.774 -1 -17.53" rotation="0 0 90"></a-obj-model> -->
-
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "9.187 0 -17.1" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="9.187 0 -17.1" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "5.654 0 -24.02" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="5.654 0 -24.02" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "2.446 -0.1 -24.36" rotation="0 0 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="2.446 -0.1 -24.36" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/chair-tub-2.obj; mtl: obj/chair-tub-2.mtl" scale="2 2 2" position= "9.05 -0.1 -20.18" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 90 0" position="9.05 -0.1 -20.18" scale="2.3 4 2.3" material="opacity:0;"></a-entity>
 
-<a-cylinder position="4.416 0 -20.55" scale="3 1 2" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+<a-entity static-body geometry="primitive: cylinder;" position="4.416 0 -20.55" radius="0.5" scale="2 1.45 1.5" material="color:#FFC65D;"></a-entity>
+<a-obj-model class="knife" src="obj/knife.obj" mtl="obj/knife.mtl" scale=".05 .05 .03" position= "4.416 -.3 -20.55" rotation="0 90 90"></a-obj-model>
 
 <a-entity obj-model="obj: obj/curtain.obj; mtl: obj/curtain.mtl" scale="5 5 5" position= "-3.671 -0.912 -25.53" rotation="0 180 0"></a-entity>
 
@@ -139,27 +165,36 @@
 
 <!-- Library -->
 <a-entity obj-model="obj: obj/desk.obj; mtl: obj/desk.mtl" scale="1 1 1" position= "-25.62 0 -18.83" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="-24.76 0 -18.83" scale="4 2 4" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".05 .05 .05" position= "-25.08 0 -23.91" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-25.08 0 -23.91" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/curtain.obj; mtl: obj/curtain.mtl" scale="5 5 5" position= "-18.61 -0.912 -25.53" rotation="0 180 0"></a-entity>
 
 <!-- Billiards Room -->
 <a-entity gltf-model="obj/pool-table2.glb" scale=".35 .35 .35" position= "-17.3 0 -5.976" rotation="0 90 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="-17.3 0 -5.976" scale="5.2 2 3.2" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "-24.9 0 -10.1" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-24.9 0 -10.1" scale="2 5 2" material="opacity:0"></a-entity>
 
 <!-- Dining Room -->
-<a-entity obj-model="obj: obj/ma-table.obj; mtl: obj/ma-table.mtl" scale="2 2 2" position= "-19.39 0 6.68" rotation="0 0 0"></a-entity>
+<a-entity obj-model="obj: obj/ma-table.obj; mtl: obj/ma-table.mtl" scale="2.5 2 2.5" position= "-19.39 0 6.68" rotation="0 0 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="-19.39 0 6.68" scale="5.5 2 4.1" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/flower1.obj; mtl: obj/flower1.mtl" scale=".04 .04 .04" position= "-12.84 0 2.29" rotation="0 270 0"></a-entity>
+<a-entity static-body geometry="primitive: cylinder; radius:0.5" rotation="0 0 0" position="-12.84 0 2.29" scale="2 5 2" material="opacity:0"></a-entity>
 
 <a-entity obj-model="obj: obj/curtain.obj; mtl: obj/curtain.mtl" scale="5 5 5" position= "-26.45 -0.912 5.832" rotation="0 90 0"></a-entity>
 
 <!-- Kitchen -->
 <a-entity obj-model="obj: obj/kitchen.obj; mtl: obj/kitchen.mtl" scale="3 2 4" position= "-23.6 0 20.49" rotation="0 0 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="-26.53 0 19.232" scale="4.15 2 11" material="opacity:0;"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="-22.7 0 26.938" scale="4.3 2 4.3" material="opacity:0;"></a-entity>
 
 <a-entity obj-model="obj: obj/fridge.obj; mtl: obj/fridge.mtl" scale="1.65 1.5 1.5" position= "-19.76 -0.1 26.515" rotation="0 180 0"></a-entity>
+<a-entity static-body geometry="primitive: box" rotation="0 0 0" position="-18.73 -0.1 26.901" scale="4.15 2 3.5" material="opacity:0;"></a-entity>
 
 
 <!-- Lighting -->
